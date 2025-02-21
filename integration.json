@@ -1,0 +1,40 @@
+{
+    "data": {
+      "date": {
+        "created_at": "2025-02-19",
+        "updated_at": "2025-02-20"
+      },
+      "descriptions": {
+        "app_name": "Daily Summary and Troubleshooting Assistant",
+        "app_description": "Summarizes daily discussions in a Telex channel and suggests troubleshooting steps if needed.",
+        "app_logo": "https://c7f9-197-210-84-65.ngrok-free.app/icon",
+        "app_url": "https://c7f9-197-210-84-65.ngrok-free.app",
+        "background_color": "#fff"
+      },
+      "is_active": true,
+      "integration_type": "interval",
+      "integration_category": "Communication & Collaboration",
+      "key_features": [
+        "Receive messages from Telex channels",
+        "Summarizes messages daily",
+        "Sends summarizations to the channel",
+        "Offers troubleshooting steps if necessary"
+      ],
+      "author": "Synth",
+      "settings": [
+        {
+          "label": "interval",
+          "type": "dropdown",
+          "required": true,
+          "default": "*/5 * * * *",
+          "options": [
+            "*/5 * * * *",
+            "*/18 * * * *",
+            "*/20 * * * *"
+          ]
+        }
+      ],
+      "target_url": "https://c7f9-197-210-84-65.ngrok-free.app/message-log",
+      "tick_url": "https://c7f9-197-210-84-65.ngrok-free.app/summary"
+    }
+  }
