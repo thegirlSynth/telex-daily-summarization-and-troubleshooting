@@ -27,3 +27,7 @@ def get_icon():
 @app.get("/integration")
 def get_integration_json():
     return FileResponse("integration.json")
+
+@app.get("/health")
+async def health_check():
+    return {"status": "ok", "message": "Service is running smoothly"}
