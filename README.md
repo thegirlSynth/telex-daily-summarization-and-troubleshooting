@@ -1,4 +1,4 @@
-# Telex AI-Powered Message Summarizer & Issue Analyzer Integration
+# Telex AI-Powered Daily Message Summarizer & Troubleshooting Assistant Integration
 
 ## Overview
 This integration for Telex (`telex.im`) logs messages sent to a channel, summarizes them using AI, detects potential issues, and suggests troubleshooting steps. The summary and analysis are then sent back to the channel. The message log resets after each summary to ensure fresh processing.
@@ -13,12 +13,26 @@ This integration for Telex (`telex.im`) logs messages sent to a channel, summari
 ## Project Structure
 ```
 📂 telex-ai-integration
-│── 📜 main.py             # FastAPI backend for handling messages and summaries
-│── 📜 requirements.txt    # Required dependencies
-│── 📜 .env                # API keys and environment variables
-│── 📜 README.md           # Project documentation
-│── 📜 integration.json    # Telex integration configuration
-```
+│── 📂 app                         # Main application package
+│   │── 📂 routes                  # API routes
+│   │   │── 📜 message_log.py      # Endpoint for logging messages
+│   │   │── 📜 summary.py          # Endpoint for summarizing messages
+│   │── 📂 services                # Core business logic
+│   │   │── 📜 ai_service.py       # AI summarization and troubleshooting logic
+│   │   │── 📜 message_store.py    # Message storage logic
+│   │── 📜 models.py               # Pydantic models for request/response
+│   │── 📜 config.py               # Configuration settings (env variables, API keys)
+│   │── 📜 main.py                 # FastAPI backend entry point
+│
+│── 📂 static                      # Static assets (icons, images)
+│   │── 📜 homework.png            # Bot icon
+│   │── 📂 screenshots             # Screenshots of integration demo
+│
+│── 📜 requirements.txt            # Required dependencies
+│── 📜 .env                        # API keys and environment variables
+│── 📜 README.md                   # Project documentation
+│── 📜 integration.json            # Telex integration configuration
+
 
 ## Setup & Installation
 ### Prerequisites
@@ -99,6 +113,28 @@ The integration utilizes an AI agent for:
 - Summarization of logged messages.
 - Issue detection using predefined keywords (e.g., "error", "broken").
 - Automated troubleshooting suggestions.
+
+
+## How It Works
+
+### Step 1: A Team has discussion on the channel the entire day.
+<div>
+  <img src="static/screenshots/image.png" alt="1-1" width="45%">
+  <img src="static/screenshots/image2.png" alt="1-2" width="45%">
+</div>
+
+<div>
+  <img src="static/screenshots/image3.png" alt="Step 1-3" width="45%">
+  <img src="static/screenshots/image4.png" alt="Step 1-4" width="45%">
+</div>
+
+
+### Step 2: The integration summarizes the messages and offers suggestions/trouble-shooting steps.
+<div>
+  <img src="static/screenshots/image5.png" alt="Step 1-3" width="45%">
+  <img src="static/screenshots/image6.png" alt="Step 1-4" width="45%">
+</div>
+
 
 ## Deployment
 
