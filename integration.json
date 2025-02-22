@@ -24,16 +24,9 @@
       "settings": [
         {
           "label": "interval",
-          "type": "dropdown",
+          "type": "text",
           "required": true,
-          "default": "*/7 * * * *",
-          "options": [
-            "*/7 * * * *",
-            "0 22 * * *",
-            "0 18 * * 1-5",
-            "0 20 * * 1-5",
-            "0 22 * * 1-5"
-          ]
+          "default": "*/7 * * * *"
         }
       ],
       "target_url": "https://telex-daily-summarization-and.onrender.com/message-log",
