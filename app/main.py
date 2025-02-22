@@ -22,7 +22,7 @@ def read_root():
 
 @app.get("/icon")
 def get_icon():
-    return FileResponse("homework.png", media_type="image/png")
+    return FileResponse("static/homework.png", media_type="image/png")
 
 @app.get("/integration")
 def get_integration_json():
