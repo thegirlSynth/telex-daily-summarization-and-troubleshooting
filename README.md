@@ -143,6 +143,55 @@ The integration utilizes an AI agent for:
 2. Install the integration in your Telex channel.
 3. Configure it to trigger at desired intervals.
 
+
+## Testing on the Telex Channel
+
+### **1. Add the Integration**
+Install the integration in your Telex channel.
+
+### **2. Configure Scheduling**
+Set up the summarization schedule, e.g.:
+- Every 3 hours
+- Once daily at 6 PM
+- Every 5 minutes for rapid testing
+
+### **3. Simulate a Day’s Conversation**
+Use one of the sample test scenarios below or create a custom conversation of your own.
+
+  #### **Test Scenario 1: Customer Support Team Handling User Complaints**
+
+    Alice: Morning team! We've had multiple complaints about failed login attempts.
+    Bob: Yeah, I checked—looks like some users are getting a "wrong password" error even after resetting.
+    Charlie: Could be a caching issue. Have we tried clearing session tokens?
+    Alice: Good point! I’ll ask DevOps to investigate session handling.
+    Bob: Also, some users are reporting delayed email confirmations.
+    Charlie: Sounds like a mail server delay. I’ll escalate it to IT.
+    Alice: Great! Let’s document these issues for the team.
+
+
+  #### **Test Scenario 2: Developer Team in a Fintech Company**
+
+    Alice: Morning everyone! Did anyone else notice the API latency spike?
+    Bob: Yeah, it started around midnight. Could be a database bottleneck.
+    Charlie: Should we scale the read replicas?
+    Alice: Might help. Also, some users are reporting transaction failures.
+    Bob: I’ll check the logs and alert DevOps.
+    Charlie: Let’s also update the status page.
+    Alice: Agreed. Keeping users informed is key.
+
+
+  #### **Test Scenario 3: Editorial Team Working on a Book**
+
+    Sarah: Hey team, we need to finalize the chapter sequence today.
+    Mark: Agreed! I think Chapter 5 should come before Chapter 3.
+    Jane: That makes sense for narrative flow.
+    David: We also need more historical references in Chapter 7.
+    Sarah: I’ll compile a list of potential sources.
+    Mark: Let’s review everything by 3 PM.
+
+### **4. Wait for the Bot to Generate a Summary**
+The AI will process messages and send a summary with troubleshooting suggestions based on the interval you set.
+
 ## Contribution Guidelines
 - Follow GitHub best practices.
 - Use meaningful commit messages (`feat: added AI summarization`).
