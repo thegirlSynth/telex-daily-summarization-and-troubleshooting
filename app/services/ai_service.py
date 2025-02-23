@@ -23,10 +23,10 @@ async def summarize_messages(messages: List[str]) -> tuple[str, str]:
 
     Format your response as follows:
 
-    **Daily Summary:**
+    **📝 Daily Summary:**
     (Provide a clear, concise, human-readable summary of the key points from the messages.)
 
-    **Suggestions/Quick Fixes:**
+    **🛠️ Suggestions/Quick Fixes:**
     (If any issues or technical challenges are detected, provide solutions or recommendations.)
 
     Messages to summarize:

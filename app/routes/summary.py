@@ -17,10 +17,9 @@ async def summarize(payload: MonitorPayload):
     summary_content, issues_detected = await summarize_messages(messages)
 
     if issues_detected:
-        troubleshooting = await generate_troubleshooting(issues_detected)
-        response_message = f"{summary_content}\n\n{troubleshooting}"
-    else:
-        response_message = summary_content
+        troubleshooting = await generate_troubleshooting(issues_detected)  #Troubleshooting steps is already provided by summary.
+
+    response_message = summary_content
 
     data = {
         "message": response_message,
