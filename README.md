@@ -32,7 +32,7 @@ This integration for Telex (`telex.im`) logs messages sent to a channel, summari
 │── 📜 .env                        # API keys and environment variables
 │── 📜 README.md                   # Project documentation
 │── 📜 integration.json            # Telex integration configuration
-
+```
 
 ## Setup & Installation
 ### Prerequisites
